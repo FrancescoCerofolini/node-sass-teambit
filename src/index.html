@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/css/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Teambit | 20-04-2021</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="header-nav">
+                <div class="nav-bar">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+                    <div class="nav-menu">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Solutions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sign in</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button type="button" name="button">
+                            <img src="img/google-logo.svg" alt="">
+                            <p>Sign up</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-jumbotron">
+                <div class="header-jumbotron-text">
+                    <h1>Understand, recognize and develop your people</h1>
+                    <h6>Teambit helps teams create a high performing culture with regoluar feedback.</h6>
+                    <div class="button-box">
+                        <button type="button" name="button">
+                        <img src="img/google-logo.svg" alt="">
+                        <p>Sign up with Google</p>
+                    </button>
+                    <span>or</span>
+                    <button type="button" name="button">
+                        <img src="img/slack-logo.svg" alt="">
+                        <p>Sign up with Slack</p>
+                    </button>
+                    </div>
+                    <a href="#">or use your email address
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="header-jumbotron-image">
+                    <img src="img/illustration-main.jpg" alt="">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container-brown">
+                <div class="container-1">
+                    <div class="container-1-text">
+                        <h2>Traditional people processes lead to disengagement and turnover.</h2>
+                    </div>
+                    <div class="container-1-box">
+                        <div class="container-1-box-item" v-for="item in container1Boxes">
+                            <div class="image">
+                                <img :src="'img/' + item.img + '.png'" alt="">
+                                <p>{{item.caption}}</p>
+                            </div>
+                        </div>
+                        <div class="container-1-box-img-no-caption">
+                            <div class="image">
+                                <img src="img/before.png" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container-2">
+                    <div class="container-2-text">
+                        <h2>It doesn't have to be like that. Teambit is a modern solution that teammates love.</h2>
+                    </div>
+                    <div class="container-2-box">
+                        <div class="container-2-box-item" v-for="item in container2Boxes">
+                            <div class="image">
+                                <img :src="'img/' + item.img + '.png'" alt="">
+                                <p>{{item.caption}}</p>
+                            </div>
+                                
+                        </div>
+                        <div class="container-2-box-img-no-caption">
+                            <div class="image">
+                                <img src="img/after.png" alt="">
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="container-2-bottom-title">
+                            <h2>Here is how it works</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

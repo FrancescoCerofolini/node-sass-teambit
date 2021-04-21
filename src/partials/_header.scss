@@ -1,0 +1,150 @@
+.header-nav {
+    width: 100%;
+    background-color: $backgroundColorWhite;
+    position: fixed;
+    z-index: 999;
+}
+
+.nav-bar {
+    max-width: 1300px;
+    height: 75px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+        ul {
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+            margin-right: 40px;
+            img {
+                position: relative;
+                top: 4px;
+            }
+        }
+        a {
+            font-weight: $fontWeightButton;
+            font-size: $fontSizeButton;
+            text-decoration: none;
+            color: $colorText;
+            &:hover {
+                color: $colorButton;
+            }
+
+        }
+        button {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            background-color: $backgroundColorWhite;
+            border: 1px solid $colorButton;
+            padding: 8px 12px;
+            border-radius: 6px;
+            &:hover {
+                background-color: $colorButton;
+                p {
+                    color: $backgroundColorWhite;
+                }
+            }
+            img {
+                height: 15px;
+                margin-right: 10px;
+            }
+            p {
+                position: relative;
+                top: 2px;
+                color: $colorButton;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+.header-jumbotron {
+    height: 80vh;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-top: 75px solid #bdb5af;
+    padding: 100px 0;
+    display: flex;
+    .header-jumbotron-text {
+        width: $widthLarge;
+        h1 {
+            color: $colorText;
+            font-size: $fontSizeTitleText;
+            line-height: 70px;
+        }
+        h6 {
+            color: $colorText;
+            font-size: $fontSizeSubTitleText;
+            line-height: 35px;
+            margin-bottom: 40px;
+
+        }
+        .button-box {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: $colorButton;
+                border: 1px solid $colorButton;
+                padding: 8px 20px;
+                border-radius: 8px;
+                img {
+                    height: 20px;
+                    margin-right: 5px;
+                    
+                }
+                p {
+                    position: relative;
+                    top: -1px;
+                    color: #ffffff;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+            span {
+                padding: 0 10px;
+                color: $colorText;
+            }
+        }
+        a {
+            position: relative;
+            font-weight: $fontWeightButton;
+            font-size: $fontSizeButton;
+            text-decoration: none;
+            color: $colorText;
+            &:hover {
+                color: $colorButton;
+            }
+            i {
+                font-size: 15px;
+                position: absolute;
+                top: 5px;
+                right: -20px;
+            }
+        }
+    }   
+}
+
+.header-jumbotron-image {
+    width: $widthLarge;
+    img {
+        max-width: 600px;
+    }
+}

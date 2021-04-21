@@ -1,0 +1,111 @@
+main {
+    width: 100%;
+    .container-brown {
+        background-color: $backgroundColorBrown;
+        .container-1 {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 80px 0;
+            
+            border-top: 1px solid #bdb5af;
+            h2 {
+                color: $colorText;
+                font-size: $fontSizeStandard;
+                font-weight: $fontWeightButton;
+                text-align: center;
+            }
+            .container-1-box {
+                padding: 80px 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .container-1-box-item {
+                display: flex;
+                flex-direction: column;
+                width: 25%;
+                img {
+                    margin: 0 auto;
+                    width: 70%;
+                    height: 150px;
+                    
+                }
+                p {
+                    text-align: center;
+                    color: $colorText;
+                    font-size: $fontSizeSubTitleText;
+                    font-weight: 400;
+                    line-height: 30px;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+        .container-1-box-img-no-caption {
+            display: flex;
+            justify-content: center;
+            
+            img {
+                max-width: 300px;
+            }
+
+        }
+        .container-2 {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 80px 0;
+            border-top: 1px solid #bdb5af;
+
+            h2 {
+                color: $colorText;
+                font-size: $fontSizeStandard;
+                font-weight: $fontWeightButton;
+                text-align: center;
+            }
+
+            .container-2-box {
+                padding: 80px 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .container-2-box-item {
+                display: flex;
+                flex-direction: column;
+                width: 25%;
+
+                img {
+                    margin: 0 auto;
+                    width: 70%;
+                    height: 150px;
+
+                }
+
+                p {
+                    text-align: center;
+                    color: $colorText;
+                    font-size: $fontSizeSubTitleText;
+                    font-weight: 400;
+                    line-height: 30px;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .container-2-box-img-no-caption {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 50px;
+            img {
+                max-width: 300px;
+            }
+
+        }
+        .container-2-bottom-title {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
