@@ -114,6 +114,28 @@
                     </div>
                 </div>
             </div>
+
+            <div class="container-white">
+                <div class="container-3">
+                    <div class="container-3-box">
+                        <div class="container-3-box-item" v-for="item in container3Boxes" >
+                            <div class="background-img">
+                                <img :src="'img/' + item.img + '.jpg'" alt="">
+
+                            </div>
+                            <div class="box">
+                                <h2>{{item.title}}</h2>
+                                <p>{{item.subtitle}}</p>
+                                <a href="#">
+                                    Learn more
+                                <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <img :src="'img/' + item.icon + '.jpg'" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
     <script src="js/script.js"></script>

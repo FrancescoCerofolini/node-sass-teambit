@@ -39,15 +39,16 @@ main {
                     margin-bottom: 50px;
                 }
             }
-        }
-        .container-1-box-img-no-caption {
-            display: flex;
-            justify-content: center;
-            
-            img {
-                max-width: 300px;
-            }
+        
+            .container-1-box-img-no-caption {
+                display: flex;
+                justify-content: center;
+                
+                img {
+                    max-width: 300px;
+                }
 
+            }
         }
         .container-2 {
             max-width: 1150px;
@@ -90,22 +91,125 @@ main {
                     margin-bottom: 50px;
                 }
             }
-        }
+        
 
-        .container-2-box-img-no-caption {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            margin-bottom: 50px;
-            img {
-                max-width: 300px;
+            .container-2-box-img-no-caption {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 50px;
+                img {
+                    max-width: 300px;
+                }
+
             }
-
+            .container-2-bottom-title {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
         }
-        .container-2-bottom-title {
-            display: flex;
-            justify-content: center;
+    }
+
+    .container-white {
+        background-color: $backgroundColorWhite;
+        .container-3-box {
             width: 100%;
+            .container-3-box-item {
+                &:first-of-type, &:nth-of-type(3) {
+                    display: flex;
+                    padding: 80px 0;
+                    .background-img {
+                        display: flex;
+                        justify-content: flex-end;
+                        width: $widthLarge;
+                        img {
+                            max-width: 900px;
+                        }
+                    }
+                    .box {
+                        width: $widthXSmall;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin: 0 auto;
+                        h2 {
+                            color: $colorText;
+                            font-size: $fontSizeStandard;
+                            font-weight: 600;
+                            line-height: 40px;                                
+                        }
+                        p {
+                            color: $colorText;
+                            font-size: $fontSizeSubTitleText;
+                            font-weight: 400;
+                            line-height: 28px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $colorButton;
+                            font-size: $fontSizeSubTitleText;
+                            font-weight: $fontWeightButton;
+                            margin: 20px 0;
+                        }
+                        img {
+                            max-width: 300px;
+                            margin: 30px 0;
+                        }
+                    }
+                }
+                &:nth-of-type(2), &:last-of-type {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    padding: 80px 0;
+
+                    .box {
+                        width: $widthXSmall;
+                        
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        
+
+                        h2 {
+                            color: $colorText;
+                            font-size: $fontSizeStandard;
+                            font-weight: 600;
+                            line-height: 40px;
+                        }
+
+                        p {
+                            color: $colorText;
+                            font-size: $fontSizeSubTitleText;
+                            font-weight: 400;
+                            line-height: 28px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $colorButton;
+                            font-size: $fontSizeSubTitleText;
+                            font-weight: $fontWeightButton;
+                            margin: 20px 0;
+                        }
+
+                        img {
+                            max-width: 300px;
+                            margin: 30px 0;
+                        }
+                    }
+
+                    .background-img {
+                        display: flex;
+                        justify-content: flex-start;
+                        width: $widthLarge;
+
+                        img {
+                            max-width: 900px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

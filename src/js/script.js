@@ -31,6 +31,33 @@ var app = new Vue({
             },
             
         ],
+        container3Boxes: [
+            {
+                img: 'employee-feedback',
+                title: 'Feedback to help teammates improve',
+                subtitle: 'Empower your teammates to know in real time what they are doing well and what they need to improve.',
+                icon: 'communication',
+
+            },
+            {
+                img: 'employee-survey',
+                title: 'Surveys to help the team be better',
+                subtitle: 'Get real-time insights into your team with research-backed, lightweight ande regular surveys.',
+                icon: 'insights',
+            },
+            {
+                img: 'performance-review',
+                title: 'Reviews to help teammates get a fair evaluation',
+                subtitle: 'Make better compensation and promotion decisions wuth objective and quick performance reviews.',
+                icon: 'review',
+            },
+            {
+                img: 'employee-recognition',
+                title: 'Praise to help teammates feel valued',
+                subtitle: 'Make it a habit to recognize and praise prople who do great work.',
+                icon: 'recognition',
+            }
+        ]
     },
     methods: {
 
